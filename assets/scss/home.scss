@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "lato";
+    src: url("/build/fonts/Lato-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "ubuntu";
+    src: url("/build/fonts/ubuntu-light.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body{
+    back
+    h1{
+        color: blue;
+        font-family: 'lato', 'ubuntu';
+    }
+}
