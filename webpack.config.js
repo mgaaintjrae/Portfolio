@@ -16,6 +16,7 @@ Encore
     // only needed for CDN's or sub-directory deploy
     //.setManifestKeyPrefix('build/')
     .addStyleEntry('home', './assets/scss/home.scss')
+    .addStyleEntry('base', './assets/scss/base.scss')
 
     /*
      * ENTRY CONFIG
@@ -28,6 +29,7 @@ Encore
      */
     .addEntry('app', './assets/js/app.js')
     .addEntry('homejs', './assets/js/home.js')
+    .addEntry('basejs', './assets/js/base.js')
     //.addEntry('page1', './assets/js/page1.js')
     //.addEntry('page2', './assets/js/page2.js')
 

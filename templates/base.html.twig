@@ -35,7 +35,7 @@
         content="" property="og:image">
 
         <!--LIEN VERS CSS et FONTAWESOME-->
-        {% block stylesheets %}{% endblock %}
+        {% block stylesheets %}{% endblock %} {{ encore_entry_link_tags('base') }}
 
 
         <!-- FAVICON -->
@@ -45,6 +45,8 @@
             {% block title %}{% endblock %}| Priscilla ROY, Développeuse Web Full-stack
         </title>
 
+        
+
     </head>
 
     <body>
@@ -52,10 +54,14 @@
         {% block header %}{% endblock %}
         {% block content %}{% endblock %}
 
+        <!-- FOOTER -->
+        
+
 
 
         <!-- SCRIPTS JS -->
         {% block scripts %}{% endblock %}
+        {{ encore_entry_script_tags('basejs') }}
 
     </body>
 <html>

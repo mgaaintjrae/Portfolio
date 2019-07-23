@@ -14,5 +14,8 @@
         "dev": "./node_modules/@symfony/webpack-encore/bin/encore.js dev",
         "watch": "./node_modules/@symfony/webpack-encore/bin/encore.js dev --watch",
         "build": "./node_modules/@symfony/webpack-encore/bin/encore.js production --progress"
+    },
+    "dependencies": {
+        "knacss": "^7.1.0"
     }
 }
