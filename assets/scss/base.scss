@@ -1,0 +1,87 @@
+@import "~knacss/sass/knacss.scss";
+
+@font-face {
+    font-family: "lato";
+    src: url("/build/fonts/Lato-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato Hairline';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Lato Hairline'), url('/build/fonts/Lato-Hairline.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Lato Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Lato Light'), url('/build/fonts/Lato-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: "ubuntu";
+    src: url("/build/fonts/ubuntu-light.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*************VARIABLES*******************************/
+$bleu: #090821;
+
+/*************GENERALS********************************/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato Light', 'Lato Hairline', 'ubuntu';
+}
+
+/********************* FOOTER ************************/
+
+.fixed-footer{    
+	bottom: 0;	
+	position: fixed;	
+	width: 100%;
+    z-index: -1;
+}
+
+.site-prefooter {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+
+    .footer-icons {
+        font-size: 18px;
+        a{
+            border-radius: 50%;
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+        }
+    }
+    .list-inline {
+        margin-left: -5px; 
+        
+        li{
+            display: inline-block;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    }
+}
+
+.site-footer {
+    background-color: #1f1f1f;
+    padding: 80px 0;
+    color: #d2d2d2;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+
+    .copyright{
+        font-size: 11px;
+    }
+}

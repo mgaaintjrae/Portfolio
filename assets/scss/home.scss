@@ -30,41 +30,51 @@
 
 /*************VARIABLES***************/
 $bleu: #090821;
+$red: #d5515b;
+$gris: #414141;
 
 /*************GENERALS****************/
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Lato Light', 'Lato Hairline';
-}
+    font-family: 'Lato Light', 'Lato Hairline', 'ubuntu';
 
+}
 h2 {
-    font-family: 'Lato Light', 'Lato Hairline';
+    font-family: 'Lato Light', 'Lato Hairline', 'ubuntu';
     margin-top: 20px;
     margin-bottom: 10px;
 }
 
+strong{
+    font-family: 'lato', 'Lato Light', 'Lato Hairline', 'ubuntu';
+}
+
+
+
 body {
-    font-family: 'Lato Light', 'Lato Hairline';
+    font-family: 'Lato Light', 'Lato Hairline', 'ubuntu';
     font-size: 14px;
     line-height: 1.42;
     color: $bleu;
     background-color: #fff;
 
+    /********************** HEADER ***********************/
+
     .home-header-background {
         background-image: url('/build/img/clavier.jpg');
         background-size: cover;
         background-repeat: no-repeat;
-        background-attachment: fixed;
-        // position: relative;
-        // z-index: 1;
+        background-attachment: fixed;        
         overflow: hidden;
-        height: 100vh;
+        height: 100vh;        
+        z-index: 20;
+        width: 100%; 
+        // background-position-y: 200px;
 
         &::before {
             content: '';
-            position: absolute;
-            // z-index: -1;
+            position: absolute;            
             width: 100%;
             height: 100%;
             top: 0;
@@ -77,7 +87,7 @@ body {
             width: 100%;
             // background-color: rgba(31, 31, 31, .8);
             color: #fff;
-            position: absolute;            
+            position: absolute;
             // max-width: 768px;            
             // padding: 15px;
             text-align: center;
@@ -116,7 +126,7 @@ body {
                         }
 
                         .home-header-title {
-                            font-family: 'Lato', 'Lato Light';
+                            font-family: 'Lato', 'Lato Light', 'ubuntu';
                             font-weight: 900;
                             letter-spacing: 2px;
                             margin: 0;
@@ -125,6 +135,7 @@ body {
                         }
 
                         .home-header-subtitle {
+                            font-family: 'Lato Light', 'Lato Hairline', 'ubuntu';
                             font-size: 34px;
                             font-weight: 300;
                         }
@@ -135,6 +146,116 @@ body {
                     }
                 }
 
+            }
+        }
+    }
+
+    /********************** MAIN ***********************/
+
+    .site-main {
+        padding: 50px 0;
+        // height: 100vh;
+        width: 100%;
+        background-color: #FFF;
+        position: relative;
+        margin-bottom: 100%;        
+        z-index: 0;
+        
+
+        // MENU
+        .site-navigation {
+            color: $gris;
+            text-align: center;
+            text-transform: uppercase;
+            margin-top: 30px;
+            font-size: 18px;
+            letter-spacing: 2px;
+
+
+            ul {
+                padding: 0;
+                display: inline-block;
+
+                li {
+                    font-weight: bold;
+                    display: inline-block;
+
+                    a {
+                        color: inherit;
+                        text-decoration: none;
+                        padding: 16px 30px;
+                    }
+                }
+
+                .active {
+                    a {
+                        padding: 10px 20px;
+                        border-top: 3px solid $red;
+                        border-bottom: 3px solid $red;
+                        color: $red;
+                    }
+                }
+            }
+        }
+
+        // AVATAR
+        .section {
+            padding: 50px 90px;            
+
+            img {
+                vertical-align: middle;
+            }
+
+            .homepage-avatar {
+                max-width: 150px;
+                max-height: 150px;
+                display: block;
+                margin: 30px auto;
+            }
+
+            .img-circle {
+                border-radius: 50%
+            }
+
+            //PRESENTATION
+            .section-title {
+                font-family: 'Lato Light', 'Lato Hairline', 'ubuntu';
+                color: $gris;
+                font-weight: 300;
+                margin-top: 0;
+                margin-bottom: 30px;
+            }
+
+            p {
+                font-family: 'Lato Light', 'Lato Hairline', 'ubuntu';
+                color: $gris;
+                line-height: 1.9em;
+                font-weight: 300;
+                letter-spacing: 1px;
+                font-size: 15px;
+            }
+
+            .section-subtitle {
+                font-family: 'Lato Light', 'Lato Hairline', 'ubuntu';
+                color: $gris;
+                margin-bottom: 22px;
+                font-style: italic;
+                font-weight: 300;
+            }
+
+            //PROJETS
+            .skill {
+                font-family: 'Lato Light', 'Lato Hairline', 'ubuntu';
+                color: $gris;
+
+                h2 {
+                    font-family: 'Lato Light', 'Lato Hairline', 'ubuntu';
+                    color: $gris;
+                    font-size: 30px;
+                    margin-top: 20px;
+                    margin-bottom: 10px;
+                    font-weight: bold;
+                }
             }
         }
     }
