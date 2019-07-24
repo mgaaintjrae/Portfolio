@@ -17,6 +17,8 @@ Encore
     //.setManifestKeyPrefix('build/')
     .addStyleEntry('home', './assets/scss/home.scss')
     .addStyleEntry('base', './assets/scss/base.scss')
+    .addStyleEntry('contact', './assets/scss/contact.scss')
+    .addStyleEntry('cv', './assets/scss/cv.scss')
 
     /*
      * ENTRY CONFIG
@@ -30,6 +32,8 @@ Encore
     .addEntry('app', './assets/js/app.js')
     .addEntry('homejs', './assets/js/home.js')
     .addEntry('basejs', './assets/js/base.js')
+    .addEntry('contactjs', './assets/js/contact.js')
+    .addEntry('cvjs', './assets/js/cv.js')
     //.addEntry('page1', './assets/js/page1.js')
     //.addEntry('page2', './assets/js/page2.js')
 
