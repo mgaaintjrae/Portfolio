@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Projets{% endblock %}
+
+{% block content %}
+<div>
+    <p>
+        <a href="{{ path ('project_add') }}">Ajouter</a>
+    </p>
+</div>
+
+<table>
+    <tr>
+        <th>
+            Lastname
+        </th>
+        <th>
+            Firstname
+        </th>
+        <th>
+            Phone
+        </th>
+        <th>
+            Action
+        </th>
+    </tr>
+    {# Pour chaque contact qu'il y dans la base de données il affichera son nom, son prénom, son tel #}
+    {% for contact in contacts %}
+        <tr>
+            <td>
+                {{contact.lastname}}
+            </td>
+            <td>
+                {{contact.firstname}}
+            </td>
+            <td>
+                {{contact.tel}}
+            </td>
+            <td>
+                <a href="{{ path('project_edit',{'id' : project.id } )}}">Modifier</a>
+                <a href="{{ path('project_delete',{'id' : project.id } )}}">Supprimer</a>
+            </td>
+        </tr>
+    {% endfor %}
+</table>
+{% endblock %}
