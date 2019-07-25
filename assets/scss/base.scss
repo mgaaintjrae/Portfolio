@@ -38,12 +38,12 @@ $white: rgb(175, 175, 175);
 * {
     margin: 0;
     padding: 0;
-    font-family: 'lato','Lato Light', 'Lato Hairline', 'ubuntu';
-    
+    font-family: 'lato', 'Lato Light', 'Lato Hairline', 'ubuntu';
+
 }
 
-a{
-    text-decoration:none;
+a {
+    text-decoration: none;
 }
 
 h2 {
@@ -83,7 +83,7 @@ h2 {
         text-transform: uppercase;
         margin-top: 30px;
         font-size: 18px;
-        letter-spacing: 2px;        
+        letter-spacing: 2px;
 
         ul {
             display: inline-block;
@@ -95,7 +95,7 @@ h2 {
                 text-decoration: none;
 
                 .active1 {
-                   
+
                     a {
                         padding: 10px 20px;
                         border-top: 3px solid $red;
@@ -117,52 +117,56 @@ h2 {
     }
 }
 
-    /********************* FOOTER ************************/
+/********************* FOOTER ************************/
 
-    .fixed-footer {
-        bottom: 0;
-        position: fixed;
-        width: 100%;
-        z-index: -1;
-    }
+.fixed-footer {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    z-index: -1;
+}
 
-    .site-prefooter {
-        background-color: rgba($bleu, .8);
-        color: #fff;
-        padding: 30px 0;
+.site-prefooter {
+    background-color: rgba($bleu, .8);
+    padding: 30px 0;
 
-        .footer-icons {
-            font-size: 18px;
+    .footer-icons {
+        font-size: 18px;
 
-            a {
-                border-radius: 50%;
-                display: inline-block;
-                width: 40px;
-                height: 40px;
-                line-height: 40px;
-            }
+        a {
+            border-radius: 50%;
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            background-color: rgba(255, 255, 255, .7);
+            color: $bleu;
         }
-
-        .list-inline {
-            margin-left: -5px;
-
-            li {
-                display: inline-block;
-                padding-left: 5px;
-                padding-right: 5px;
-            }
+        a:hover{
+            background-color: #fff;
         }
     }
 
-    .site-footer {
-        background-color: $bleu;
-        padding: 80px 0;
-        color: #d2d2d2;
-        text-transform: uppercase;
-        text-align: center;
-        letter-spacing: 1px;
+    .list-inline {
+        margin-left: -5px;
 
-        .copyright {
-            font-size: 11px;
+        li {
+            display: inline-block;
+            padding-left: 5px;
+            padding-right: 5px;
         }
     }
+}
+
+.site-footer {
+    background-color: $bleu;
+    padding: 80px 0;
+    color: #d2d2d2;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+
+    .copyright {
+        font-size: 11px;
+    }
+}
