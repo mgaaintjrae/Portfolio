@@ -4,56 +4,58 @@ namespace App\Form;
 
 use App\Entity\Project;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\FormTypeInterface;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
+use Symfony\Component\Form\Extension\Core\Type\DateTimeType;
 
-class ProjectType extends AbstractType
+class ProjectType extends AbstractType implements FormTypeInterface
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
             ->add(
                 'name',
-                [
-                    'label' => 'Nom'
-                ]
+                TextType::class,
+                array('label' => 'Nom')
             )
             ->add(
-                'created_date',
-                [
-                    'label' => 'Date de création'
-                ]
+                'created_date',                
+                DateTimeType::class,
+                array('label' => 'Date de création')
+
             )
             ->add(
                 'add_at',
-                [
-                    'label' => 'Date d\'ajout'
-                ]
+                DateTimeType::class,
+                array('label' => 'Date d\'ajout')
+
             )
             ->add(
                 'category',
-                [
-                    'label' => 'Catégorie'
-                ]
+                TextType::class,
+                array('label' => 'Catégorie')
+
             )
             ->add(
                 'description',
-                [
-                    'label' => 'Description du projet'
-                ]
+                TextType::class,
+                array('label' => 'Description du projet')
+
             )
             ->add(
                 'technology',
-                [
-                    'label' => 'Technologies utilisées'
-                ]
+                TextType::class,
+                array('label' => 'Technologies utilisées')
+
             )
             ->add(
                 'customer',
-                [
-                    'label' => 'Client'
-                ]
+                TextType::class,
+                array('label' => 'Client')
+
             )
             ->add(
                 'ajouter',

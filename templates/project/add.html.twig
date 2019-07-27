@@ -1,6 +1,11 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Ajouter un projet{% endblock %}
+{% block stylesheets %}
+    {{ encore_entry_link_tags('base') }}
+{% endblock %}
+
+{% block title %}Ajouter un projet {% endblock %}
+
 
 {% block content %}
 <div>
@@ -38,4 +43,8 @@
 
     {{ form_end(form) }}
 </div>
+{% endblock %}
+
+{% block scripts %}
+    {{ encore_entry_script_tags('basejs') }}
 {% endblock %}
