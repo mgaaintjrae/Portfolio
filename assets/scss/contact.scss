@@ -1,0 +1,90 @@
+@import "~knacss/sass/knacss.scss";
+
+@font-face {
+    font-family: "lato";
+    src: url("/build/fonts/Lato-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato Hairline';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Lato Hairline'), url('/build/fonts/Lato-Hairline.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Lato Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Lato Light'), url('/build/fonts/Lato-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: "ubuntu";
+    src: url("/build/fonts/ubuntu-light.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*************VARIABLES***************/
+$bleu: #090821;
+$red: #d5515b;
+$gris: #414141;
+$white: rgb(175, 175, 175);
+
+/*************GENERALS****************/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato Light', 'Lato Hairline', 'ubuntu';
+
+}
+
+h2 {
+    font-family: 'Lato Light', 'Lato Hairline', 'ubuntu';
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/***************** CONTACT ****************/
+#contact{
+    background-image:url('/build/img/clavier_contact.jpg');
+    background-size: cover;
+    margin-bottom: 26%;
+}
+// MENU
+.site-navigation {
+    color: $gris;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 30px;
+    font-size: 18px;
+    letter-spacing: 2px;
+
+    ul {
+        padding: 0;
+        display: inline-block;
+
+        li {
+            font-weight: bold;
+            display: inline-block;
+
+            a {
+                color: inherit;
+                text-decoration: none;
+                padding: 16px 30px;
+            }
+        }
+
+        .active_contact {
+            a {
+                padding: 10px 20px;
+                border-top: 3px solid $red;
+                border-bottom: 3px solid $red;
+                color: $red;
+            }
+        }
+    }
+}

@@ -1,35 +1,120 @@
 {% extends 'base.html.twig' %}
 
 {% block stylesheets %}
-    {{ encore_entry_link_tags('project') }}
+    {{ encore_entry_link_tags('project') }}    
 {% endblock %}
 
-{% block title %}Projets {% endblock %}
+{% block title %}Projets
+{% endblock %}
 
 {% block content %}
-<div>
-    <p>
-        <a href="{{ path ('project_add') }}">Ajouter</a>
-    </p>
-</div>
-{#
-<table>
-    <tr>
-        <th>
-            Lastname
-        </th>
-        <th>
-            Firstname
-        </th>
-        <th>
-            Phone
-        </th>
-        <th>
-            Action
-        </th>
-    </tr>
-    {# Pour chaque contact qu'il y dans la base de données il affichera son nom, son prénom, son tel #}
-    {# {% for contact in contacts %}
+    <section class="actions">
+        <div class="actions_header">
+            <p>
+                <a href="{{ path ('project_add') }}">Ajouter</a>
+            </p>
+        </div>
+    </section>
+
+
+    <!-- PORTFOLIO SECTION -->
+    <section class="portfolio" id="projects">
+        <div class="portfolio_header">
+            {# <h2>PROJETS</h2> #}
+        </div>
+        <div class="port_container">
+            <div class="content_left restaurant"></div>
+            <div class="content_right">
+                <a class="link_first" href="#" target="_blank">Restaurant Lambda</a>
+                <p>A responsive website built from scratch for Create Israel. The project uses
+                                                                top CSS practices with accessibility in mind, Wordpress engine, DOM
+                                                                manipulation via Javascript and jQuery, focusing on correct semantics and
+                                                                web standards.</p>
+                <a class="info" href="#" target="_blank"><i class="fas fa-link"></i>Projet</a>
+                <a class="info" href="#" target="_blank"><i class="fab fa-github"></i>Github</a>
+            </div>
+        </div>
+        <div class="port_container">
+            <div class="content_left festi-france"></div>
+            <div class="content_right">
+                <a class="link_first" href="#" target="_blank">Festi-France</a>
+                <p>A responsive website built from scratch for Create Israel. The project uses
+                                                                    top CSS practices with accessibility in mind, Wordpress engine, DOM
+                                                                    manipulation via Javascript and jQuery, focusing on correct semantics and
+                                                                    web standards.</p>
+                <a class="info" href="#" target="_blank"><i class="fas fa-link"></i>Projet</a>
+                <a class="info" href="#" target="_blank"><i class="fab fa-github"></i>Github</a>
+            </div>
+        </div>
+        <div class="port_container">
+            <div class="content_left sokoban"></div>
+            <div class="content_right">
+                <a class="link_first" href="#" target="_blank">Sokoban</a>
+                <p>A responsive website built from scratch for Create Israel. The project uses
+                                                                        top CSS practices with accessibility in mind, Wordpress engine, DOM
+                                                                        manipulation via Javascript and jQuery, focusing on correct semantics and
+                                                                        web standards.</p>
+                <a class="info" href="#" target="_blank"><i class="fas fa-link"></i>Projet</a>
+                <a class="info" href="#" target="_blank"><i class="fab fa-github"></i>Github</a>
+            </div>
+        </div>
+        <div class="port_container">
+            <div class="content_left john-doe"></div>
+            <div class="content_right">
+                <a class="link_first" href="#" target="_blank">Portfolio John Doe</a>
+                <p>A responsive website built from scratch for Create Israel. The project uses
+                                                                        top CSS practices with accessibility in mind, Wordpress engine, DOM
+                                                                        manipulation via Javascript and jQuery, focusing on correct semantics and
+                                                                        web standards.</p>
+                <a class="info" href="#" target="_blank"><i class="fas fa-link"></i>Projet</a>
+                <a class="info" href="#" target="_blank"><i class="fab fa-github"></i>Github</a>
+            </div>
+        </div>
+        <div class="port_container">
+            <div class="content_left"></div>
+            <div class="content_right">
+                <a class="link_first" href="#" target="_blank">x</a>
+                <p>A responsive website built from scratch for Create Israel. The project uses
+                                                                        top CSS practices with accessibility in mind, Wordpress engine, DOM
+                                                                        manipulation via Javascript and jQuery, focusing on correct semantics and
+                                                                        web standards.</p>
+                <a class="info" href="#" target="_blank"><i class="fas fa-link"></i>Projet</a>
+                <a class="info" href="#" target="_blank"><i class="fab fa-github"></i>Github</a>
+            </div>
+        </div>
+        <div class="port_container">
+            <div class="content_left"></div>
+            <div class="content_right">
+                <a class="link_first" href="#" target="_blank">x</a>
+                <p>A responsive website built from scratch for Create Israel. The project uses
+                                                                        top CSS practices with accessibility in mind, Wordpress engine, DOM
+                                                                        manipulation via Javascript and jQuery, focusing on correct semantics and
+                                                                        web standards.</p>
+                <a class="info" href="#" target="_blank"><i class="fas fa-link"></i>Projet</a>
+                <a class="info" href="#" target="_blank"><i class="fab fa-github"></i>Github</a>
+            </div>
+        </div>
+    </section>
+
+
+    {#
+        <table>
+            <tr>
+                <th>
+                    Lastname
+                </th>
+                <th>
+                    Firstname
+                </th>
+                <th>
+                    Phone
+                </th>
+                <th>
+                    Action
+                </th>
+            </tr>
+            {# Pour chaque contact qu'il y dans la base de données il affichera son nom, son prénom, son tel #}
+{# {% for contact in contacts %}
         <tr>
             <td>
                 {{contact.lastname}}
@@ -46,10 +131,10 @@
             </td>
         </tr>
     {% endfor %} #}
-{# </table> #}
+    {# </table> #}
 {% endblock %}
+
 
 {% block scripts %}
     {{ encore_entry_script_tags('projectjs') }}
 {% endblock %}
-

@@ -62,17 +62,18 @@
                     </h1>
                     <h2 class="site-subtitle">Développeuse Web Full-stack</h2>
                     <nav class="site-navigation">
+                    {# <button class="nav-button" type="button" role="button" aria-label="open/close navigation"><i></i></button> #}
                         <ul class="unstyled">
                             <li class="">
                                 <a href="/">Portfolio</a>
                             </li>
-                            <li class="">
+                            <li class="active_project">
                                 <a href="/projet">Projets</a>
                             </li>
-                            <li class="is-active">
+                            <li class="active_cv">
                                 <a href="/cv">CV</a>
                             </li>
-                            <li class="">
+                            <li class="active_contact">
                                 <a href="/contact">Contact</a>
                             </li>
                         </ul>
@@ -83,10 +84,11 @@
 
         {% block content %}{% endblock %}
 
+
         <!-- FOOTER -->
         <div class="fixed-footer">
-            <div class="site-prefooter">
-                <div class="autogrid center">
+            <div class="small-w100 tiny-w100 site-prefooter">
+                <div class=" autogrid center">
                     <ul class="footer-icons list-inline txtcenter">
                         <li>
                             <a href="https://www.linkedin.com/in/priscilla-roy-860ba5182/">
@@ -102,12 +104,13 @@
                 </div>
             </div>
 
-            <footer class="site-footer">
-                <div class="autogrid center">
+            <footer class="small-w100 tiny-w100 site-footer">
+                <div class=" autogrid center">
                     <p class="copyright">Copyright &copy 2019 - Tous Droits Réservés - Priscilla ROY</p>
                 </div>
             </footer>
         </div>
+        
 
         <!-- SCRIPTS JS -->
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>

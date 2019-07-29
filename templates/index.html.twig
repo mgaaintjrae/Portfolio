@@ -11,8 +11,8 @@
 {% block header %}
     <div class="home-header-background parallax">
         <header class="home-header">
-            <div class="home-header-inner">
-                <section class="autogrid center">
+            <div class=" home-header-inner">
+                <section class="small-w100 tiny-w100 autogrid center">
                     <div class="home-header-border">
                         <p class="home-header-subhead">Bonjour, je suis</p>
                         <h1 class="home-header-title ml3">Priscilla Roy</h1>
@@ -47,6 +47,7 @@
     {% block content %}
         <main class="site-main">
             <nav class="site-navigation">
+            <button class="nav-button" type="button" role="button" aria-label="open/close navigation"><i></i></button>
                 <ul class="unstyled">
                     <li class="active">
                         <a href="/">Portfolio</a>
@@ -62,6 +63,7 @@
                     </li>
                 </ul>
             </nav>
+
             {# PRESENTATION #}
             <section class="section">
                 <div class="flex-container--column">
@@ -75,7 +77,7 @@
                 </div>
             </section>
             {# COMPETENCES #}
-            <section class="section" id="competences">
+            <section class="section paralax" id="competences">
                 <div class="flex-container--column">
                     <h2 class="section-title txtcenter">Mes
                         <strong>compétences</strong>
@@ -122,18 +124,52 @@
             </section>
 
             {# PROJETS #}
-            <section class="section">
+            <section class="section projects">
                 <div class="flex-container--column">
                     <h2 class="section-title txtcenter">Mes
                         <strong>projets</strong>
                     </h2>
-                    <div class="grid-2 has-gutter">
-                        <img alt="mockups du projet lambda restaurant" class="from-left" src="/build/img/lambda_mockup.png">
-                        <img alt="mockups du projet data" class="from-right" src="/build/img/festi-france_mockup.png">
+                    <div class="grid-2 has-gutter ">
+                        <div class="view view-tenth from-left">
+                            <img alt="mockups du projet lambda restaurant" class="" src="/build/img/lambda_mockup.png">
+                            <div class="mask">
+                                <h2>Restaurant Lambda</h2>
+                                <p>Site-vitrine</p>
+                                <a class="info" href="#">Découvrir le Projet</a>
+                            </div>
+                        </div>
+
+                        <div class="view view-tenth from-right">
+                            <img alt="mockups du projet data" class="" src="/build/img/festi-france_mockup.png">
+                            <div class="mask">
+                                <h2>Festi'France</h2>
+                                <p>Site Architecture MVC</p>
+                                <a class="info" href="#">Découvrir le Projet</a>
+                            </div>
+                        </div>
                     </div>
+
                     <div class="grid-2 has-gutter">
-                        <img alt="mockups de la maquette john doe" class="from-left" src="/build/img/john-doe_mockup.png">
-                        <img alt="mockups du projet sokoban, jeu du super bousier" class="from-right" src="/build/img/sokoban_mockup.png">
+                        <div class="view view-tenth from-left">
+                            <img alt="mockups de la maquette john doe" class="" src="/build/img/john-doe_mockup.png">
+                            <div class="mask">
+                                <h2>Portfolio John Doe</h2>
+                                <p>Portfolio</p>
+                                <a class="info" href="#">Découvrir le Projet</a>
+                            </div>
+                        </div>
+
+                        <div class="view view-tenth from-right">
+                            <img alt="mockups du projet sokoban, jeu du super bousier" class="" src="/build/img/sokoban_mockup.png">
+                            <div class="mask">
+                                <h2>Sokoban</h2>
+                                <p>Jeu</p>
+                                <a class="info" href="#">Découvrir le Projet</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="txtcenter">
+                    <a href="/projet" class="btn btn--ghost">Plus de projets</a>
                     </div>
                 </div>
             </section>
