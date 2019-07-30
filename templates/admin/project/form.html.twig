@@ -1,0 +1,18 @@
+
+{{ form_start(form) }}
+<div class="grid center">
+
+{{ form_row(form.name, {'label' : 'Nom du projet', 'attr':{'placeholder': 'Nom projet...'}}) }}
+{{ form_row(form.created_date, {'label' : 'Date et heure de création', 'attr':{'placeholder': 'Crée le...'}}) }}
+{{ form_row(form.add_at, {'label' : 'Date et heure d\'ajout', 'attr':{'placeholder': 'Ajouté le...'}}) }}
+{{ form_row(form.category, {'label' : 'Catégorie', 'attr':{'placeholder': 'ex : Site Wordpress, Site-vitrine, Symfony...'}}) }}
+{{ form_row(form.description, {'label' : 'Description du projet', 'attr':{'placeholder': 'Description...'}}) }}
+{{ form_row(form.technology, {'label' : 'Technologies utilisées', 'attr':{'placeholder': 'ex : SASS, JavaScript, PHP...'}}) }}
+{{ form_row(form.customer, {'label' : 'Nom du client', 'attr':{'placeholder': 'Client...'}}) }}
+</div>
+
+<button class="btn btn--primary">{{ button | default('Enregistrer') }}</button>
+
+{{ form_end(form) }}
+
+

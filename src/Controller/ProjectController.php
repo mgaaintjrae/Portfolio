@@ -27,47 +27,8 @@ class ProjectController extends AbstractController
         ]);
     }
 
-    /**
-     * @Route("/projet/new", name="project_add")
-     */
-    public function add(Request $request, ObjectManager $manager)
-    {
-        $project = new Project();
 
-        //On crée un formulaire 
-        $form = $this->createForm(ProjectType::class, $project);
-
-        //On manipule la requête (vérifie si il y a des POST)
-        $form->handleRequest($request);
-
-        //Réception et Validation du formulaire
-        if ($form->isSubmitted() && $form->isValid()) {
-            //le persist on l'utilise que pour INSERT et UPDATE (ajouter et modifier)
-            $manager->persist($project);
-            $manager->flush();
-            //une fois l'ajout effectuer je redirige sur la liste des projets
-            return $this->redirectToRoute('project');
-        }
-
-        //affichage de notre twig
-        return $this->render(
-            'project/add.html.twig',
-            [
-                'form' => $form->createView() //on crée la vue (contient tout le HTML du formulaire)
-            ]
-
-        );
-    }
-
-    /**
-     * @Route("/projet/edit/{id}", name="project_edit")
-     */
-    public function edit()
-    {
-
-        return false;
-    }
-
+  
      /**
      * @Route("/projet/delete/{id}", name="project_delete")
      */
