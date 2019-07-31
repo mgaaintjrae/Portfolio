@@ -1,0 +1,159 @@
+@import "~knacss/sass/knacss.scss";
+
+@font-face {
+    font-family: "lato";
+    src: url("/build/fonts/Lato-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato Hairline';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Lato Hairline'), url('/build/fonts/Lato-Hairline.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Lato Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Lato Light'), url('/build/fonts/Lato-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: "ubuntu";
+    src: url("/build/fonts/ubuntu-light.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*************VARIABLES***************/
+$bleu: #090821;
+$red: #d5515b;
+$gris: #414141;
+$white: rgb(175, 175, 175);
+
+/*************GENERALS****************/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato Light', 'Lato Hairline', 'ubuntu';
+}
+
+body,
+html {
+    background: white;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 27%;
+}
+
+.alert {
+    margin: auto;
+    width: 300px;
+}
+
+.login {
+    padding-top: 4%;
+    margin: auto;
+    width: 300px;
+}
+
+.login input[type=text],
+.login input[type=password] {
+    opacity: 1;
+    display: block;
+    border: none;
+    outline: none;
+    width: 300px;
+    padding: 10px;
+    margin: 20px 0 0 0;
+    border-radius: 2px;
+}
+
+.login input[type=text] {
+    animation: bounce 1s;
+    -webkit-appearance: none;
+}
+
+
+/*if Username*/
+.login input[type=text]:focus:valid~input[type=submit] {
+    background: #2ecc71;
+    color: #f2f2f2;
+}
+
+.login input[type=text]:focus:valid~input[type=submit]:hover {
+    background: #17b55a;
+}
+
+
+.login input[type=text]:invalid~input[type=submit] {
+    background: #e74c3c;
+    color: #f2f2f2;
+}
+
+.login input[type=text]:invalid~input[type=submit]:hover {
+    background: #d63b2b;
+}
+
+.login input[type=password] {
+    animation: bounce1 1.3s;
+}
+
+.login input[type=submit],
+.login input[type=button] {
+    border: 0;
+    outline: 0;
+    padding: 13px 18px;
+    margin: 40px 0 0 0;
+    border-radius: 2px;
+    font-weight: 600;
+    animation: bounce2 1.6s;
+}
+
+.login input[type=submit] {
+    float: right;
+    background: #f8f8f8;
+    color: #34495e;
+    outline: none;
+}
+
+.login input[type=submit]:hover {
+    background: #ccc;
+}
+
+.login input[type=button] {
+    background: #2C3E50;
+    color: #34495e;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(-250px);
+        opacity: 0;
+    }
+}
+
+@keyframes bounce1 {
+    0% {
+        opacity: 0;
+    }
+
+    40% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+}
+
+@keyframes bounce2 {
+    0% {
+        opacity: 0;
+    }
+
+    70% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+}

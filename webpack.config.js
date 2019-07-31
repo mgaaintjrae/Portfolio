@@ -20,6 +20,7 @@ Encore
     .addStyleEntry('contact', './assets/scss/contact.scss')
     .addStyleEntry('cv', './assets/scss/cv.scss')
     .addStyleEntry('project', './assets/scss/project.scss')
+    .addStyleEntry('login', './assets/scss/login.scss')
 
     /*
      * ENTRY CONFIG
@@ -36,6 +37,7 @@ Encore
     .addEntry('contactjs', './assets/js/contact.js')
     .addEntry('cvjs', './assets/js/cv.js')
     .addEntry('projectjs', './assets/js/project.js')
+    .addEntry('loginjs', './assets/js/login.js')
     //.addEntry('page1', './assets/js/page1.js')
     //.addEntry('page2', './assets/js/page2.js')
 

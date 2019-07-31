@@ -5,6 +5,10 @@
 
 {% block content %}
 
+{% if app.user %}
+<a href="{{ path ('logout') }}" class="btn btn--primary">Déconnexion</a>
+{% endif %}
+
     <h1 class="txtcenter">Gérer les projets</h1>
 
     {% for message in app.flashes('success') %}

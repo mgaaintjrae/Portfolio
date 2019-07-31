@@ -1,0 +1,30 @@
+{% extends "base.html.twig" %}
+
+{% block stylesheets %}
+    {{ encore_entry_link_tags('login') }}
+{% endblock %}
+
+
+{% block title %}Se connecter
+{% endblock %}
+
+{% block content %}
+
+    {% if error %}
+        <div class="alert alert--danger">
+            {{ error.messageKey | trans(error.messagedata, 'security') }}
+        </div>
+    {% endif %}
+
+    <form action="{{ path ('login') }}" method="post" class="login">
+        <input id="username" name="_username" placeholder="Pseudo" type="text" value="{{ last_username }}"/>
+
+        <input id="password" name="_password" placeholder="Password" type="password"/>
+
+        <input type="submit" value="Login"/>
+    </form>
+{% endblock %}
+
+{% block scripts %}
+    {{ encore_entry_script_tags('loginjs') }}
+{% endblock %}
