@@ -1,0 +1,95 @@
+@import "~knacss/sass/knacss.scss";
+
+@font-face {
+    font-family: "lato";
+    src: url("/build/fonts/Lato-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato Hairline';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Lato Hairline'), url('/build/fonts/Lato-Hairline.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Lato Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Lato Light'), url('/build/fonts/Lato-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: "ubuntu";
+    src: url("/build/fonts/ubuntu-light.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*************VARIABLES*******************************/
+$bleu: #090821;
+$red: #d5515b;
+$gris: #414141;
+$white: rgb(175, 175, 175);
+
+/*************GENERALS********************************/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato Light', 'Lato Hairline', 'ubuntu';
+
+}
+
+body {
+    background-color: white;
+
+    .site-navigation {
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 30px;
+        font-size: 18px;
+        letter-spacing: 2px;
+
+        ul {
+            display: inline-block;
+            padding: 0;
+            margin-bottom: 10px;
+
+            li {
+                display: inline-block;
+                text-decoration: none;
+
+                .active1 {
+
+                    a {
+                        padding: 10px 20px;
+                        border-top: 3px solid $red;
+                        border-bottom: 3px solid $red;
+                        color: $red;
+                    }
+                }
+
+                .active2 {
+                    a {
+                        padding: 10px 20px;
+                        border-top: 3px solid $red;
+                        border-bottom: 3px solid $red;
+                        color: $red;
+                    }
+                }
+            }
+        }
+    }
+    
+    .tableau {        
+        background-color: white;
+        margin-bottom: 30%; 
+        
+        .grid{
+            width: 80%;
+        }
+
+    }
+}

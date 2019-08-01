@@ -21,6 +21,8 @@ Encore
     .addStyleEntry('cv', './assets/scss/cv.scss')
     .addStyleEntry('project', './assets/scss/project.scss')
     .addStyleEntry('login', './assets/scss/login.scss')
+    .addStyleEntry('admin_project', './assets/scss/admin_project.scss')
+    .addStyleEntry('admin_form', './assets/scss/admin_form.scss')
 
     /*
      * ENTRY CONFIG
@@ -38,6 +40,8 @@ Encore
     .addEntry('cvjs', './assets/js/cv.js')
     .addEntry('projectjs', './assets/js/project.js')
     .addEntry('loginjs', './assets/js/login.js')
+    .addEntry('admin_projectjs', './assets/js/admin_project.js')
+    .addEntry('admin_formjs', './assets/js/admin_form.js')
     //.addEntry('page1', './assets/js/page1.js')
     //.addEntry('page2', './assets/js/page2.js')
 

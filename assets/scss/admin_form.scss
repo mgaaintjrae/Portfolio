@@ -1,0 +1,53 @@
+@import "~knacss/sass/knacss.scss";
+
+@font-face {
+    font-family: "lato";
+    src: url("/build/fonts/Lato-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato Hairline';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Lato Hairline'), url('/build/fonts/Lato-Hairline.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Lato Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Lato Light'), url('/build/fonts/Lato-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: "ubuntu";
+    src: url("/build/fonts/ubuntu-light.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*************VARIABLES*******************************/
+$bleu: #090821;
+$red: #d5515b;
+$gris: #414141;
+$white: rgb(175, 175, 175);
+
+/*************GENERALS********************************/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'lato', 'Lato Light', 'Lato Hairline', 'ubuntu';
+
+}
+
+h1{
+    background: white;
+}
+
+.form{
+    background: white;
+    
+        margin-bottom: 30%;
+}

@@ -1,11 +1,16 @@
 {% extends 'base.html.twig' %}
 
+{% block stylesheets %}
+    {{ encore_entry_link_tags('admin_form') }}
+{% endblock %}
+
 {% block title %}Modifier un projet {% endblock %}
 
 
 
 {% block content %}
-<h1 class="txtcenter">Editer un projet</h1>
+<h1 class="txtcenter mbn">Editer un projet</h1>
+
 
 {{ include ('admin/project/form.html.twig', {button: 'Modifier'}) }}
 {% endblock %}

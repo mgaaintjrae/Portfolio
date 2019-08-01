@@ -1,6 +1,11 @@
+{% block stylesheets %}
+    {{ encore_entry_link_tags('admin_form') }}
+{% endblock %}
 
-{{ form_start(form) }}
-<div class="grid center">
+{% block content %}
+<div class="form">
+    {{ form_start(form) }}
+    <div class="flex-container--column txtcenter ptl">
 
 {{ form_row(form.name, {'label' : 'Nom du projet', 'attr':{'placeholder': 'Nom projet...'}}) }}
 {{ form_row(form.created_date, {'label' : 'Date et heure de création', 'attr':{'placeholder': 'Crée le...'}}) }}
@@ -15,4 +20,5 @@
 
 {{ form_end(form) }}
 
-
+</div>
+{% endblock %}

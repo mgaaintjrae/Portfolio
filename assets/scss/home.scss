@@ -155,7 +155,6 @@ body {
                         clear: both;
                     }
                 }
-
             }
         }
 
@@ -189,7 +188,6 @@ body {
                 transition: all cubic-bezier(0.785, 0.135, 0.15, 0.86);
             }
         }
-
 
         @keyframes scroll-line {
             0% {
@@ -372,7 +370,8 @@ body {
             100% {
                 transform: translate3d(45px, 0, 0)
             }
-        }
+        } 
+        /*------------------------*/
     }
 
 
