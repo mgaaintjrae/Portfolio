@@ -12,7 +12,7 @@
     <div class="home-header-background parallax">
         <header class="home-header">
             <div class=" home-header-inner">
-                <section class="small-w100 tiny-w100 autogrid center">
+                <section class="autogrid center">
                     <div class="home-header-border">
                         <p class="home-header-subhead">Bonjour, je suis</p>
                         <h1 class="home-header-title ml3">Priscilla Roy</h1>
@@ -44,10 +44,8 @@
 
     {% block content %}
         <main class="site-main">
+            <input class="burger-check" id="burger-check" type="checkbox"><label class="burger" for="burger-check"></label>
             <nav class="site-navigation">
-                <button aria-label="open/close navigation" class="nav-button" role="button" type="button">
-                    <i></i>
-                </button>
                 <ul class="unstyled">
                     <li class="active">
                         <a href="/">Portfolio</a>
