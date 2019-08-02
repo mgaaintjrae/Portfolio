@@ -39,13 +39,16 @@ $white: rgb(175, 175, 175);
     margin: 0;
     padding: 0;
     font-family: 'Lato Light', 'Lato Hairline', 'ubuntu';
-
 }
 
 h2 {
     font-family: 'Lato Light', 'Lato Hairline', 'ubuntu';
     margin-top: 20px;
     margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 36px;
 }
 
 /***************** CV ****************/
@@ -61,11 +64,14 @@ h2 {
 
     ul {
         padding: 0;
+        margin: 0;
         display: inline-block;
 
         li {
             font-weight: bold;
             display: inline-block;
+            font-size: 18px;
+            padding: 5px 0;
 
             a {
                 color: inherit;
@@ -84,3 +90,218 @@ h2 {
         }
     }
 }
+
+//BURGER
+// Burger menu button
+$burger--thickness: 4px;
+
+.burger {
+    $width: 28px;
+    margin-top: 7%;
+    margin-left: 47%;
+    display: inline-block;
+    border: 0;
+    background: none;
+    outline: 0;
+    padding: 0;
+    cursor: pointer;
+    border-bottom: $burger--thickness solid currentColor;
+    width: $width;
+    transition: border-bottom 1s ease-in-out;
+    -webkit-transition: border-bottom 1s ease-in-out;
+
+    @include respond-to("small-up") {
+        display: none;
+    }
+
+    // Fix for extra space in Firefox
+    &::-moz-focus-inner {
+        border: 0;
+        padding: 0;
+    }
+
+    &:before {
+        content: "";
+        display: block;
+        border-bottom: $burger--thickness solid currentColor;
+        width: 100%;
+        margin-bottom: 5px;
+        transition: transform 0.5s ease-in-out;
+        -webkit-transition: -webkit-transform 0.5s ease-in-out;
+        transition-duration: 1.5s;
+    }
+
+    &:after {
+        content: "";
+        display: block;
+        border-bottom: $burger--thickness solid currentColor;
+        width: 100%;
+        margin-bottom: 5px;
+        transition: transform 0.5s ease-in-out;
+        -webkit-transition: -webkit-transform 0.5s ease-in-out;
+        transition-duration: 1.5s;
+    }
+}
+
+.burger-check {
+    display: none;
+}
+
+.burger-check:checked~.burger {
+    border-bottom: $burger--thickness solid transparent;
+    transition: border-bottom 0.8s ease-in-out;
+    -webkit-transition: border-bottom 0.8s ease-in-out;
+
+    &:before {
+        transform: rotate(-405deg) translateY(1px) translateX(-3px);
+        -webkit-transform: rotate(-405deg) translateY(1px) translateX(-3px);
+        transition: transform 0.5s ease-in-out;
+        -webkit-transition: -webkit-transform 0.5s ease-in-out;
+        transition-duration: 1.5s;
+    }
+
+    &:after {
+        transform: rotate(405deg) translateY(-4px) translateX(-5px);
+        -webkit-transform: rotate(405deg) translateY(-4px) translateX(-5px);
+        transition: transform 0.5s ease-in-out;
+        -webkit-transition: -webkit-transform 0.5s ease-in-out;
+        transition-duration: 1.5s;
+    }
+}
+
+// * * * Navigation * * *
+$navigation__transition: max-height 1.5s ease-in-out;
+
+.site-navigation {
+
+    transition: $navigation__transition;
+
+    @include respond-to("medium") {
+        overflow: hidden;
+        max-height: 0;
+    }
+}
+
+.burger-check:checked~.site-navigation {
+    max-height: 500px;
+
+    transition: $navigation__transition;
+}
+
+//FIN BURGER
+
+//MAIN
+.site-main {
+    padding: 50px 0;
+    margin-bottom: 30%;
+    margin-top: -6%;
+    background-color: white;
+
+    @include respond-to("small") {
+        margin-top: -30%;
+        margin-bottom: 79%;
+    }
+
+    @media (min-width: 576px) and (max-width: 992px) {
+        margin-top: -15%;
+        margin-bottom: 40%;
+    }    
+
+    .container {
+        width: 970px;
+        
+            @include respond-to("small") {
+                width: 370px;
+            }     
+            @media (min-width: 576px) and (max-width: 992px) {                
+                    width: 765px;
+                }
+
+        .section {
+            padding: 50px 0;
+
+            .section-title {
+                font-family: 'Lato Light',
+                    'Lato Hairline',
+                    'ubuntu';
+                color: $gris;
+                text-align: center;
+                font-weight: 300;
+                margin-top: 0;
+                margin-bottom: 30px;
+            }
+
+            p {
+                font-family: 'Lato Light',
+                    'Lato Hairline',
+                    'ubuntu';
+                color: $gris;
+                line-height: 1.9em;
+                font-weight: 300;
+                letter-spacing: 1px;
+                font-size: 15px;
+            }
+
+            dl {
+                margin-top: 0;
+                margin-bottom: 20px;
+
+                dt {
+                    font-family: 'Lato Light',
+                        'Lato Hairline',
+                        'ubuntu';
+                    color: $gris;
+                    float: left;
+                    width: 250px;
+                    clear: left;
+                    text-align: right;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    line-height: 1.42857143;
+                    font-weight: 700;
+
+                    @include respond-to("small") {
+                        width: 130px;
+                    }
+                }
+
+                dd {
+                    font-family: 'Lato Light',
+                        'Lato Hairline',
+                        'ubuntu';
+                    color: $gris;
+                    margin-left: 275px;
+                    line-height: 1.42857143;
+
+                    @include respond-to("small") {
+                        margin-left: 155px;
+                    }
+                }
+            }
+        }
+    }
+
+    .btn--ghost {
+        border-radius: 0;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 5px 30px;
+        font-weight: 300;
+        margin-top: 30px;
+        color: $gris;
+        border: 1px solid $gris;
+        font-size: 18px;
+        line-height: 1.3333333;
+        font-family: 'Lato Light', 'Lato Hairline', 'ubuntu';
+    }
+
+    .btn--ghost:hover {
+        border: 1px solid $bleu;
+        color: white;
+        background: $bleu;
+        box-shadow: 0 0 5px $bleu;
+        text-decoration: none;
+    }
+}
+

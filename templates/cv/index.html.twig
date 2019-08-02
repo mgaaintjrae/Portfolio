@@ -1,13 +1,111 @@
 {% extends 'base.html.twig' %}
 
 {% block stylesheets %}
-    {{ encore_entry_link_tags('cv') }}
+    {{ encore_entry_link_tags('cv') }}    
 {% endblock %}
 
-{% block title %}CV {% endblock %}
+{% block title %}CV
+{% endblock %}
 
 {% block content %}
 
+    <main class="site-main">
+        <div class="container center">
+
+            <section class="section">
+                <h1 class="section-title">Mon
+                    <strong>Curriculum Vitae</strong>
+                </h1>
+                <p class="txtcenter">Développeuse Web Full-stack depuis 2019. Je m'appelle Priscilla, j'ai 33 ans et je vis à Besançon.</p>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">Mes
+                    <strong>compétences</strong>
+                </h2>
+
+                <dl class="dl-horizontal">
+                    <dt>Langages</dt>
+                    <dd>PHP7.2, Javascript</dd>
+
+                    <dt>Framework</dt>
+                    <dd>Symfony4, Doctrine, React.js, Wordpress, Bootstrap, Knacss</dd>
+
+                    <dt>Base de données</dt>
+                    <dd>MySQL, Worckbench</dd>
+
+                    <dt>Devops</dt>
+                    <dd>Vagrant</dd>
+
+                    <dt>Frontend</dt>
+                    <dd>CSS, SASS, Twig, Webpack</dd>
+
+                    <dt>Versioning</dt>
+                    <dd>GIT, GitHub</dd>
+
+                </dl>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">Mes
+                    <strong>expériences professionelles</strong>
+                </h2>
+
+                <dl class="dl-horizontal important">
+                    <dt>Sept 2019</dt>
+                    <dd>Stage en tant que développeuse Web au sein de l'agence SPIN ON (Besançon, France).</dd>
+                </dl>
+
+                <dl class="dl-horizontal">
+                    <dt>2012 à 2019</dt>
+                    <dd>CDI en tant que Préparatrice en Pharmacie au sein de la pharmacie des Tilleroyes (Besançon, France).</dd>
+                </dl>
+
+                <dl class="dl-horizontal">
+                    <dt>2017 à 2012</dt>
+                    <dd>CDD en tant que Préparatrice en Pharmacie au sein de diverses pharmacies (Franche-comté, France).</dd>
+                </dl>
+            </section>
+
+
+            <section class="section">
+                <h2 class="section-title">Ma
+                    <strong>formation</strong>
+                </h2>
+
+                <dl class="dl-horizontal">
+                    <dt>2019</dt>
+                    <dd>Formation de Développeuse Web et Web mobile au sein de l'Access Code School (Besançon).</dd>
+
+                    <dt>2007 à 2010</dt>
+                    <dd>BP de Préparatrice en Pharmacie (Besançon).</dd>
+
+                    <dt>2004 à 2006</dt>
+                    <dd>BT d'Arts Appliqués spécialité céramique (Longchamp).</dd>
+
+                </dl>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">Autres
+                    <strong>informations</strong>
+                </h2>
+
+                <dl class="dl-horizontal">
+                    <dt>Permis</dt>
+                    <dd>Permis B, véhiculé</dd>
+
+                    <dt>Intérets</dt>
+                    <dd>Musique, Informatique, Infographie, Jeu vidéo, Technologies, Cinéma, Coutures, Arts</dd>
+                </dl>
+            </section>
+        </div>
+        <div class="txtcenter">
+            <a class="btn btn--ghost" href="#">Télécharger CV</a>
+        </div>
+
+
+    </main>
 
 {% endblock %}
 

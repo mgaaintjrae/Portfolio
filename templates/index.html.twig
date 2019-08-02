@@ -74,8 +74,9 @@
                     <p class="txtcenter from-bottom">Intéressée par le graphisme, le cinéma, la musique, férue de bière allemande, je manie également la machine à coudre à mes heures perdues.</p>
                 </div>
             </section>
+            
             {# COMPETENCES #}
-            <section class="section paralax" id="competences">
+            <section class="section paralax saturate" id="competences">
                 <div class="flex-container--column">
                     <h2 class="section-title txtcenter">Mes
                         <strong>compétences</strong>
@@ -119,58 +120,167 @@
                         </div>
                     </div>
                 </div>
+
             </section>
 
+
             {# PROJETS #}
-            <section class="section projects">
-                <div class="flex-container--column">
+            <section class="section projects ">                
+
                     <h2 class="section-title txtcenter">Mes
                         <strong>projets</strong>
                     </h2>
-                    <div class="grid-2 has-gutter ">
-                        <div class="view view-tenth from-left">
-                            <img alt="mockups du projet lambda restaurant" class="" src="/build/img/portfolio_mockup.png">
-                            <div class="mask">
-                                <h2>Restaurant Lambda</h2>
-                                <p>Site-vitrine</p>
-                                <a class="info" href="#">Découvrir le Projet</a>
-                            </div>
-                        </div>
+<div class="panel panel--portfolio-grid">
 
-                        <div class="view view-tenth from-right">
-                            <img alt="mockups du projet data" class="" src="/build/img/portfolio_mockup.png">
+<ul class="portfolio-grid">
+
+                        <li class="view view-tenth portfolio-grid__item">
+                            
+                                <a class="portfolio-grid__item__link" href="/projet">
+                                    <div class="portfolio-grid__item__images">                                       
+
+                                            <img alt="mockups du projet lambda restaurant" class="" src="/build/img/portfolio_mockup.png">
+                                        
+                                        <div class="mask">
+                                            <h2>Restaurant Lambda</h2>
+                                            <p>Site-vitrine</p>
+                                            {# <a class="info" href="#">Découvrir le Projet</a> #}
+                                        </div>
+                                    </div>
+                                </a>
+                            
+
+                        </li>
+
+                        <li class="view view-tenth portfolio-grid__item">
+                            <figure class="portfolio-grid__item__img">
+
+                                <img alt="mockups du projet data" class="" src="/build/img/portfolio_mockup.png">
+                            </figure>
+
                             <div class="mask">
                                 <h2>Festi'France</h2>
                                 <p>Site Architecture MVC</p>
                                 <a class="info" href="#">Découvrir le Projet</a>
                             </div>
-                        </div>
-                    </div>
+                        </li>
 
-                    <div class="grid-2 has-gutter">
-                        <div class="view view-tenth from-left">
+                        <li class="view view-tenth portfolio-grid__item ">
                             <img alt="mockups de la maquette john doe" class="" src="/build/img/portfolio_mockup.png">
                             <div class="mask">
                                 <h2>Portfolio John Doe</h2>
                                 <p>Portfolio</p>
                                 <a class="info" href="#">Découvrir le Projet</a>
                             </div>
-                        </div>
+                        </li>
 
-                        <div class="view view-tenth from-right">
-                            <img alt="mockups du projet sokoban, jeu du super bousier" class="" src="/build/img/portfolio_mockup.png">
+                        <li class="view view-tenth portfolio-grid__item ">
+                            <img alt="mockups de la maquette john doe" class="" src="/build/img/portfolio_mockup.png">
                             <div class="mask">
-                                <h2>Sokoban</h2>
-                                <p>Jeu</p>
+                                <h2>Portfolio John Doe</h2>
+                                <p>Portfolio</p>
                                 <a class="info" href="#">Découvrir le Projet</a>
                             </div>
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
+
+                    {# <div class="grid-3 has-gutter">
+                                                                                                                                                                    <div class="view view-tenth from-left">
+                                                                                                                                                                        <img alt="mockups de la maquette john doe" class="" src="/build/img/portfolio_mockup.png">
+                                                                                                                                                                        <div class="mask">
+                                                                                                                                                                            <h2>Portfolio John Doe</h2>
+                                                                                                                                                                            <p>Portfolio</p>
+                                                                                                                                                                            <a class="info" href="#">Découvrir le Projet</a>
+                                                                                                                                                                        </div>
+                                                                                                                                                                    </div>
+                                                                                                                                            
+                                                                                                                                                                    <div class="view view-tenth from-left">
+                                                                                                                                                                        <img alt="mockups de la maquette john doe" class="" src="/build/img/portfolio_mockup.png">
+                                                                                                                                                                        <div class="mask">
+                                                                                                                                                                            <h2>Portfolio John Doe</h2>
+                                                                                                                                                                            <p>Portfolio</p>
+                                                                                                                                                                            <a class="info" href="#">Découvrir le Projet</a>
+                                                                                                                                                                        </div>
+                                                                                                                                                                    </div>
+                                                                                                                                            
+                                                                                                                                                                    <div class="view view-tenth from-right">
+                                                                                                                                                                        <img alt="mockups du projet sokoban, jeu du super bousier" class="" src="/build/img/portfolio_mockup.png">
+                                                                                                                                                                        <div class="mask">
+                                                                                                                                                                            <h2>Sokoban</h2>
+                                                                                                                                                                            <p>Jeu</p>
+                                                                                                                                                                            <a class="info" href="#">Découvrir le Projet</a>
+                                                                                                                                                                        </div>
+                                                                                                                                                                    </div>
+                                                                                                                                                                </div> #}
                     <div class="txtcenter">
                         <a class="btn btn--ghost" href="/projet">Plus de projets</a>
                     </div>
                 </div>
             </section>
+
+
+            <section class="panel panel--portfolio-grid" id="work">
+                <ul class="portfolio-grid">
+                    <li class="portfolio-grid__item">
+                        <article>
+                            <a class="portfolio-grid__item__link" href="/projet">
+                                <div class="portfolio-grid__item__images">
+
+                                    <figure class="portfolio-grid__item__img">
+                                        <img alt="" src="/build/img/portfolio_mockup.png" title="">
+                                    </figure>
+
+                                    {# <figure class="portfolio-grid__item__rollover-img">
+                                        <img alt="" src="/build/img/portfolio.png" title="">
+                                    </figure> #}
+
+                                </div>
+                                {# <div class="view view-tenth portfolio-grid__item__info">
+                                    <span class="portfolio-grid__item__category">Portfolio</span>
+                                    <div class="mask portfolio-grid__item__titles">
+                                        <h2 class="portfolio-grid__item__client">Access Code School</h2>
+                                        <p class="portfolio-grid__item__title">PORTFOLIO</p>
+                                    </div>
+                                </div> #}
+<div class="mask">
+    <h2>Restaurant Lambda</h2>
+    <p>Site-vitrine</p>
+    {# <a class="info" href="#">Découvrir le Projet</a> #}
+</div>
+
+                            </a>
+                        </article>
+                    </li>
+
+
+                    <li class="portfolio-grid__item">
+                        <article>
+                            <a class="portfolio-grid__item__link" href="/projet">
+                                <div class="portfolio-grid__item__images">
+                                    <figure class="portfolio-grid__item__img">
+                                        <img alt="" src="/build/img/portfolio_mockup.png" title="">
+                                    </figure>
+
+                                    <figure class="portfolio-grid__item__rollover-img">
+                                        <img alt="" src="/build/img/portfolio.png" title="">
+                                    </figure>
+
+                                </div>
+                                <div class="portfolio-grid__item__info">
+                                    <span class="portfolio-grid__item__category">Portfolio</span>
+
+                                    <div class="portfolio-grid__item__titles">
+                                        <h2 class="portfolio-grid__item__client">Access Code School</h2>
+                                        <h5 class="portfolio-grid__item__title">PORTFOLIO</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                    </li>
+                </ul>
+            </section>
+
+
         </main>
     {% endblock %}
 

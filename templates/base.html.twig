@@ -8,12 +8,12 @@
         content="ie=edge" http-equiv="X-UA-Compatible">
 
         <!-- META description -->
-        <meta content="Priscilla ROY, Développeuse Web Full-stack, intéressée par l'art, le cinéma et la musique. 
-        Adepte du site web bien fait, j'aime me surpasser dans mon travail. " name="description">
+        <meta content="Priscilla ROY, Développeuse Web Full-stack, intéressée par l'art, le cinéma et la musique.
+                                Adepte du site web bien fait, j'aime me surpasser dans mon travail. " name="description">
         <meta content="Priscilla" name="author">
+        <meta content="priscilla roy, roy, symfony, symfony4, php, javascript, web, besançon, portfolio" name="keywords">
         <meta
-        content="priscilla roy, roy, symfony, symfony4, php, javascript, web, besançon, portfolio" name="keywords">
-        <meta property="og:title" content="Priscilla ROY, Développeuse Web Full-stack" />
+        content="Priscilla ROY, Développeuse Web Full-stack" property="og:title"/>
         <!-- META Twitter -->
         <meta content="Twitter" name="twitter:title">
         <meta content="compte twitter" name="twitter:description">
@@ -44,7 +44,7 @@
 
 
         <!-- FAVICON -->
-        <link rel="icon" type="image/png" href="/build/img/favicon.png" />
+        <link href="/build/img/favicon.png" rel="icon" type="image/png"/>
 
         <title>
             {% block title %}{% endblock %}| Priscilla ROY, Développeuse Web Full-stack
@@ -53,7 +53,8 @@
 
     </head>
 
-    <body>
+    <body>        
+
         {% block header %}
             <header class="site-header">
                 <div class="flex-container--column">
@@ -61,8 +62,8 @@
                         <a href="/">Priscilla Roy</a>
                     </h1>
                     <h2 class="site-subtitle">Développeuse Web Full-stack</h2>
+                    <input class="burger-check" id="burger-check" type="checkbox"><label class="burger" for="burger-check"></label>
                     <nav class="site-navigation">
-                    {# <button class="nav-button" type="button" role="button" aria-label="open/close navigation"><i></i></button> #}
                         <ul class="unstyled">
                             <li class="">
                                 <a href="/">Portfolio</a>
@@ -110,7 +111,7 @@
                 </div>
             </footer>
         </div>
-        
+
 
         <!-- SCRIPTS JS -->
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -119,4 +120,3 @@
         {% block scripts %}{% endblock %}
         {{ encore_entry_script_tags('basejs') }}</body>
 </html>
-
