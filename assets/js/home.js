@@ -37,46 +37,46 @@ window.addEventListener('scroll', () => {
 // }());
 
 // PARALLAX COMPETENCES
-(function () {
-	// Add event listener
-	document.addEventListener("mousemove", parallax);
-	const elem = document.querySelector(".paralax");
-	// Magic happens here
-	function parallax(e) {
-		let _w = window.innerWidth / 2;
-		let _h = window.innerHeight / 2;
-		let _mouseX = e.clientX;
-		let _mouseY = e.clientY;
-		let _depth1 = `${50 - (_mouseX - _w) * 0.01}% ${50 - (_mouseY - _h) * 0.01}%`;
-		let _depth2 = `${50 - (_mouseX - _w) * 0.02}% ${50 - (_mouseY - _h) * 0.02}%`;
-		let _depth3 = `${50 - (_mouseX - _w) * 0.06}% ${50 - (_mouseY - _h) * 0.06}%`;
-		let x = `${_depth3}, ${_depth2}, ${_depth1}`;
-		// console.log(x);
-		elem.style.backgroundPosition = x;
-	}
-})();
+// (function () {
+// 	// Add event listener
+// 	document.addEventListener("mousemove", parallax);
+// 	const elem = document.querySelector(".paralax");
+// 	// Magic happens here
+// 	function parallax(e) {
+// 		let _w = window.innerWidth / 2;
+// 		let _h = window.innerHeight / 2;
+// 		let _mouseX = e.clientX;
+// 		let _mouseY = e.clientY;
+// 		let _depth1 = `${50 - (_mouseX - _w) * 0.01}% ${50 - (_mouseY - _h) * 0.01}%`;
+// 		let _depth2 = `${50 - (_mouseX - _w) * 0.02}% ${50 - (_mouseY - _h) * 0.02}%`;
+// 		let _depth3 = `${50 - (_mouseX - _w) * 0.06}% ${50 - (_mouseY - _h) * 0.06}%`;
+// 		let x = `${_depth3}, ${_depth2}, ${_depth1}`;
+// 		// console.log(x);
+// 		elem.style.backgroundPosition = x;
+// 	}
+// })();
 
 //ANIMATE PROJECT
-// $(document).ready(function () {
-// 	$(window).on('scroll', function () {
+$(document).ready(function () {
+	$(window).on('scroll', function () {
 
-// 		var elmt = $('.from-left, .from-right');
-// 		var topImg = $('.from-left, .from-right').offset().top;
-// 		var scroll = $(window).scrollTop();
+		var elmt = $('.from-left, .from-right');
+		var topImg = $('.from-left, .from-right').offset().top;
+		var scroll = $(window).scrollTop();
 
-// 		$(elmt).each(function () {
+		$(elmt).each(function () {
 
-// 			var topImg = $(this).offset().top - 300;
+			var topImg = $(this).offset().top - 300;
 
-// 			if (topImg < scroll) {
+			if (topImg < scroll) {
 
-// 				$(this).css("transform", "translate(0,0)");
-// 				$(this).css("opacity", "1");
+				$(this).css("transform", "translate(0,0)");
+				$(this).css("opacity", "1");
 
-// 			};
-// 		});
-// 	});
-// });
+			};
+		});
+	});
+});
 
 //ANIMATE TEXT
 $(document).ready(function () {

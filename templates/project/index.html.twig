@@ -1,132 +1,83 @@
 {% extends 'base.html.twig' %}
 
 {% block stylesheets %}
-    {{ encore_entry_link_tags('project') }}    
+    {{ encore_entry_link_tags('project') }}
 {% endblock %}
 
 {% block title %}Projets
 {% endblock %}
 
-{% block content %} 
+{% block content %}
 
-    <!-- PORTFOLIO SECTION -->
-    <section class="portfolio" id="projects">
-        <div class="portfolio_header">
-            {# <h2>PROJETS</h2> #}
+<!-- PROJETS SECTION -->
+
+{# PROJETS #}
+<main class="site-main"> <div class="container center">
+    <section class="projets">
+        <div class="grid">
+            <a class="grayscale" href="#">
+                <span class="text">
+                    <h1>PORTFOLIO</h1>
+                </span>
+                <img src="/build/img/portfolio_mockup.png">
+            </a>
+            <a class="grayscale" href="#">
+                <span class="text">
+                    <h1>BLOG</h1>
+                </span>
+                <img src="/build/img/vinyles_mockup.jpg">
+            </a>
         </div>
-        <div class="port_container">
-            <div class="content_left restaurant"></div>
-            <div class="content_right">
-                <a class="link_first" href="#" target="_blank">Restaurant Lambda</a>
-                <p>A responsive website built from scratch for Create Israel. The project uses
-                                                                top CSS practices with accessibility in mind, Wordpress engine, DOM
-                                                                manipulation via Javascript and jQuery, focusing on correct semantics and
-                                                                web standards.</p>
-                <a class="info" href="#" target="_blank"><i class="fas fa-link"></i>Projet</a>
-                <a class="info" href="#" target="_blank"><i class="fab fa-github"></i>Github</a>
-            </div>
+
+        <div class="grid">
+            <a class="grayscale" href="#">
+                <span class="text">
+                    <h1>DASHBOARD</h1>
+                </span>
+                <img src="/build/img/dashboard_mockup.jpg">
+            </a>
+            <a class="grayscale" href="#">
+                <span class="text">
+                    <h1>APPLICATION</h1>
+                </span>
+                <img src="/build/img/festi_mockup.jpg">
+            </a>
         </div>
-        <div class="port_container">
-            <div class="content_left festi-france"></div>
-            <div class="content_right">
-                <a class="link_first" href="#" target="_blank">Festi-France</a>
-                <p>A responsive website built from scratch for Create Israel. The project uses
-                                                                    top CSS practices with accessibility in mind, Wordpress engine, DOM
-                                                                    manipulation via Javascript and jQuery, focusing on correct semantics and
-                                                                    web standards.</p>
-                <a class="info" href="#" target="_blank"><i class="fas fa-link"></i>Projet</a>
-                <a class="info" href="#" target="_blank"><i class="fab fa-github"></i>Github</a>
-            </div>
+
+        <div class="grid">
+            <a class="grayscale" href="#">
+                <span class="text">
+                    <h1>JEU SOKOBAN</h1>
+                </span>
+                <img src="/build/img/jeu_mockup.jpg">
+            </a>
+            <a class="grayscale" href="#">
+                <span class="text">
+                    <h1>SITE-VITRINE</h1>
+                </span>
+                <img src="/build/img/bluesy_mockup.jpg">
+            </a>
         </div>
-        <div class="port_container">
-            <div class="content_left sokoban"></div>
-            <div class="content_right">
-                <a class="link_first" href="#" target="_blank">Sokoban</a>
-                <p>A responsive website built from scratch for Create Israel. The project uses
-                                                                        top CSS practices with accessibility in mind, Wordpress engine, DOM
-                                                                        manipulation via Javascript and jQuery, focusing on correct semantics and
-                                                                        web standards.</p>
-                <a class="info" href="#" target="_blank"><i class="fas fa-link"></i>Projet</a>
-                <a class="info" href="#" target="_blank"><i class="fab fa-github"></i>Github</a>
-            </div>
+
+        <div class="grid">
+            <a class="grayscale" href="#">
+                <span class="text">
+                    <h1>SITE-VITRINE</h1>
+                </span>
+                <img src="/build/img/restaurant_mockup.jpg">
+            </a>
+            <a class="grayscale" href="#">
+                <span class="text">
+                    <h1>MAQUETTE</h1>
+                </span>
+                <img src="/build/img/john_mockup.jpg">
+            </a>
         </div>
-        <div class="port_container">
-            <div class="content_left john-doe"></div>
-            <div class="content_right">
-                <a class="link_first" href="#" target="_blank">Portfolio John Doe</a>
-                <p>A responsive website built from scratch for Create Israel. The project uses
-                                                                        top CSS practices with accessibility in mind, Wordpress engine, DOM
-                                                                        manipulation via Javascript and jQuery, focusing on correct semantics and
-                                                                        web standards.</p>
-                <a class="info" href="#" target="_blank"><i class="fas fa-link"></i>Projet</a>
-                <a class="info" href="#" target="_blank"><i class="fab fa-github"></i>Github</a>
-            </div>
-        </div>
-        <div class="port_container">
-            <div class="content_left"></div>
-            <div class="content_right">
-                <a class="link_first" href="#" target="_blank">x</a>
-                <p>A responsive website built from scratch for Create Israel. The project uses
-                                                                        top CSS practices with accessibility in mind, Wordpress engine, DOM
-                                                                        manipulation via Javascript and jQuery, focusing on correct semantics and
-                                                                        web standards.</p>
-                <a class="info" href="#" target="_blank"><i class="fas fa-link"></i>Projet</a>
-                <a class="info" href="#" target="_blank"><i class="fab fa-github"></i>Github</a>
-            </div>
-        </div>
-        <div class="port_container">
-            <div class="content_left"></div>
-            <div class="content_right">
-                <a class="link_first" href="#" target="_blank">x</a>
-                <p>A responsive website built from scratch for Create Israel. The project uses
-                                                                        top CSS practices with accessibility in mind, Wordpress engine, DOM
-                                                                        manipulation via Javascript and jQuery, focusing on correct semantics and
-                                                                        web standards.</p>
-                <a class="info" href="#" target="_blank"><i class="fas fa-link"></i>Projet</a>
-                <a class="info" href="#" target="_blank"><i class="fab fa-github"></i>Github</a>
-            </div>
-        </div>
+
     </section>
-
-
-    {#
-        <table>
-            <tr>
-                <th>
-                    Lastname
-                </th>
-                <th>
-                    Firstname
-                </th>
-                <th>
-                    Phone
-                </th>
-                <th>
-                    Action
-                </th>
-            </tr>
-            {# Pour chaque contact qu'il y dans la base de données il affichera son nom, son prénom, son tel #}
-{# {% for contact in contacts %}
-        <tr>
-            <td>
-                {{contact.lastname}}
-            </td>
-            <td>
-                {{contact.firstname}}
-            </td>
-            <td>
-                {{contact.tel}}
-            </td>
-            <td>
-                <a href="{{ path('project_edit',{'id' : project.id } )}}">Modifier</a>
-                <a href="{{ path('project_delete',{'id' : project.id } )}}">Supprimer</a>
-            </td>
-        </tr>
-    {% endfor %} #}
-    {# </table> #}
+</main>
 {% endblock %}
 
-
 {% block scripts %}
-    {{ encore_entry_script_tags('projectjs') }}
+ {{ encore_entry_script_tags('projectjs') }}
 {% endblock %}

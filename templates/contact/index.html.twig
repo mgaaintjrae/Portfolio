@@ -4,10 +4,52 @@
     {{ encore_entry_link_tags('contact') }}
 {% endblock %}
 
-{% block title %}Contact {% endblock %}
+{% block title %}Contact
+{% endblock %}
 
 {% block content %}
+    <main class="site-main">
+        <div class="container center">
 
+            <section class="section">
+                <h1 class="section-title">Me
+                    <strong>Contacter</strong>
+                </h1>
+            </section>
+
+            <div class="center">
+                {{ form_start(form) }}
+                <div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input class="validate" id="lastname" type="text">
+                            <label for="lastname">Nom</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input class="validate" id="email" type="email">
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea class="materialize-textarea" id="message"></textarea>
+                            <label for="message">Message</label>
+                        </div>
+                    </div>
+
+                    <button class="btn waves-effect waves-light" name="action" type="submit">Envoyer                        
+                    </button>
+
+                </div>
+                {{ form_end(form) }}
+            </div>
+
+        </div>
+    </main>
 {% endblock %}
 
 

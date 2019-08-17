@@ -56,6 +56,7 @@ h2 {
 .site-header {
     padding: 100px 0;
     margin-bottom: -30px;
+    background-color: white;
 
     .site-title {
         text-align: center;
@@ -102,25 +103,33 @@ h2 {
             li {
                 display: inline-block;
                 text-decoration: none;
+                font-size: 18px;
+                 @include respond-to("small") {
+                     padding: 16px 0;
+                 }
+                
 
-                .active1 {
-
-                    a {
-                        padding: 10px 20px;
-                        border-top: 3px solid $red;
-                        border-bottom: 3px solid $red;
-                        color: $red;
-                    }
+                span {
+                    position: relative;
+                    padding: 16px 0;
                 }
 
-                .active2 {
-                    a {
-                        padding: 10px 20px;
-                        border-top: 3px solid $red;
-                        border-bottom: 3px solid $red;
-                        color: $red;
-                    }
+                span::before {
+                    content: '';
+                    position: absolute;
+                    left: 50%;
+                    bottom: 3px;
+                    width: 70%;
+                    height: 3px;
+                    background-color: $red;
+                    transform-origin: center;
+                    transform: translate(-50%, 0) scaleX(0);
+                    transition: transform 0.3s ease-in-out;
                 }
+
+                span:hover::before {
+                    transform: translate(-50%, 0) scaleX(1);
+                }                
             }
         }
     }
@@ -141,6 +150,7 @@ h2 {
 
     .footer-icons {
         font-size: 18px;
+        padding-left: 0;
 
         a {
             border-radius: 50%;
@@ -154,17 +164,13 @@ h2 {
         a:hover{
             background-color: #fff;
         }
-    }
-
-    .list-inline {
-        margin-left: -38px;
+    }   
 
         li {
             display: inline-block;
             padding-left: 5px;
             padding-right: 5px;
-        }
-    }
+        }    
 }
 
 .site-footer {

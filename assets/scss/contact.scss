@@ -1,4 +1,5 @@
 @import "~knacss/sass/knacss.scss";
+@import "~materialize-css/sass/materialize.scss";
 
 @font-face {
     font-family: "lato";
@@ -49,11 +50,20 @@ h2 {
 }
 
 /***************** CONTACT ****************/
-#contact{
-    background-image:url('/build/img/clavier_contact.jpg');
-    background-size: cover;
-    margin-bottom: 26%;
+.site-main{
+    background-color: white;
+    padding: 50px 0;
+    margin-bottom: 30%;
+    margin-top: -6%;
 }
+.section-title {
+    font-family: 'Lato Light', 'Lato Hairline', 'ubuntu';
+    color: $gris;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
 // MENU
 .site-navigation {
     color: $gris;
@@ -87,13 +97,15 @@ h2 {
                 border-top: 3px solid $red;
                 border-bottom: 3px solid $red;
                 color: $red;
+                @include respond-to("small") {
+                    border: none;
+                }
             }
         }
     }
 }
 
 //BURGER
-// Burger menu button
 $burger--thickness: 4px;
 
 .burger {

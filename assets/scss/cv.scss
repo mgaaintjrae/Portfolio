@@ -86,6 +86,9 @@ h1 {
                 border-top: 3px solid $red;
                 border-bottom: 3px solid $red;
                 color: $red;
+                @include respond-to("small") {
+                    border: none;
+                }
             }
         }
     }
